@@ -12,6 +12,8 @@ Page Organization:
 >container: content
 
 Open API to utilize:
+db.json - http://localhost:3000/data
+
 The MET - https://collectionapi.metmuseum.org/public/collection/v1/objects/[objectID]
 AIC - https://api.artic.edu/api/v1/artworks
 
@@ -82,3 +84,19 @@ For open source projects, say how it is licensed.
 ///
 PROJECT STATUS:
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+///
+From NN of FLIRN:
+1. Description of App
+2. Url of page
+3. How to run it!
+
+upon opening file > begin typing into the search field (i.e. kehinde wiley)
+a list of his artwork will filter out from other artist artwork
+
+you can then click on the artwork card for more artwork details/information
+
+you can switch between light mode/dark mode
+
+to receive more information and sign up on the email list, click on "sign up!" button and input your name and email and click submit.
+
