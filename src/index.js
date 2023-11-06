@@ -18,6 +18,11 @@ const results = document.getElementById("results");
 //***CARD***
 const cardsContainer = document.getElementById("cards");
 
+//***CARD DETAILS***
+const cardDetailsContainer = document.getElementById("cardDetails");
+const cardArtist = document.getElementById("cardArtist");
+const cardMedium = document.getElementById("cardMedium");
+const cardPrice = document.getElementById("cardPrice");
 
 //***DARK MODE***
 const toggleDarkModeButton = document.getElementById("toggleDarkMode");
