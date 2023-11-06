@@ -24,6 +24,10 @@ const cardArtist = document.getElementById("cardArtist");
 const cardMedium = document.getElementById("cardMedium");
 const cardPrice = document.getElementById("cardPrice");
 
+
+
+
+
 //***DARK MODE***
 const toggleDarkModeButton = document.getElementById("toggleDarkMode");
 
@@ -32,12 +36,21 @@ let darkModeEnabled = false;
 //***DARK MODE***
 //Toggle dark mode
 toggleDarkModeButton.addEventListener("click", () => {
-    darkModeEnabled = !darkModeEnabled;
-    document.body.classList.toggle("dark-mode", darkModeEnabled);
-    cardsContainer.querySelectorAll(".card").forEach((card) => {
-      card.classList.toggle("dark-mode", darkModeEnabled);
-    });
+  darkModeEnabled = !darkModeEnabled;
+  document.body.classList.toggle("dark-mode", darkModeEnabled);
+  cardsContainer.querySelectorAll(".card").forEach((card) => {
+    card.classList.toggle("dark-mode", darkModeEnabled);
   });
+});
+
+//***CARD DETAILS*** 
+//Function to display card details
+function showCardDetails(artist, medium, price) {
+    cardArtist.textContent = `Artist: ${artist}`;
+    cardMedium.textContent = `Medium: ${medium}`;
+    cardPrice.textContent = `Price: $${price}`;
+    cardDetailsContainer.style.display = "block";
+  }
 
 
 //***SEARCH INPUT***
@@ -56,9 +69,9 @@ searchInput.addEventListener("input", () => {
       })
       .catch((error) => console.error("Error fetching data:", error));
   });
-
-//***CARD***
-function displayFilteredCards(filteredCards) {
+  
+  //***CARD***
+  function displayFilteredCards(filteredCards) {
     results.innerHTML = ""; // Clear previous results
     cardDetailsContainer.style.display = "none"; // Hide card details
     //***CONTACT FORM***
@@ -80,4 +93,18 @@ function displayFilteredCards(filteredCards) {
         `;
         //***DARK MODE***
           cardElement.classList.toggle("dark-mode", darkModeEnabled);
-
+  
+      //***CARD DETAILS***     
+      // Add click event to show card details
+        cardElement.addEventListener("click", () => {
+          showCardDetails(card.artist, card.medium, card.price);
+        });
+  
+        cardsContainer.appendChild(cardElement);
+      });
+    }
+  }
+  //***CARD***
+  //console.log(document.querySelector('#cards'))
+  document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
+  })
