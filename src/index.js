@@ -11,7 +11,7 @@ function fetchData(){
 document.addEventListener('DOMContentLoaded', () => {
     console.log('The DOM has Landed!')
 
-    //***SEARCH INPUT***
+//***SEARCH INPUT***
 const searchInput = document.getElementById("searchInput");
 const results = document.getElementById("results");
 
@@ -80,7 +80,7 @@ contactForm.style.display = "none"; // Hide the form
 //***SEARCH INPUT***
 searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
-  //***FETCH DB.JSON & CARD***
+//***FETCH DB.JSON & CARD***
     fetch("http://localhost:3000/data")
       .then((response) => response.json())
       .then((data) => {
@@ -94,20 +94,20 @@ searchInput.addEventListener("input", () => {
       .catch((error) => console.error("Error fetching data:", error));
   });
   
-  //***CARD***
+//***CARD***
   function displayFilteredCards(filteredCards) {
     results.innerHTML = ""; // Clear previous results
     cardDetailsContainer.style.display = "none"; // Hide card details
-    //***CONTACT FORM***
+//***CONTACT FORM***
     contactForm.style.display = "none"; // Hide contact form
   
-  //***CARD***
+//***CARD***
     if (filteredCards.length === 0) {
       results.innerHTML = "<p>No results found</p>";
     } else {
       cardsContainer.innerHTML = ""; // Clear previous card elements
   
-  //***CARD***
+//***CARD***
       filteredCards.forEach((card) => {
         const cardElement = document.createElement("div");
         cardElement.className = "card"; // You can define CSS styles for your cards
@@ -115,10 +115,10 @@ searchInput.addEventListener("input", () => {
               <img src="${card.image}" alt="">
               <h3>${card.name}</h3>
         `;
-        //***DARK MODE***
+//***DARK MODE***
           cardElement.classList.toggle("dark-mode", darkModeEnabled);
   
-      //***CARD DETAILS***     
+//***CARD DETAILS***     
       // Add click event to show card details
         cardElement.addEventListener("click", () => {
           showCardDetails(card.artist, card.medium, card.price);
@@ -128,7 +128,7 @@ searchInput.addEventListener("input", () => {
       });
     }
   }
-  //***CARD***
+//***CARD***
   //console.log(document.querySelector('#cards'))
   //document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
   })
