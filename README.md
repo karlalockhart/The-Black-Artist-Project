@@ -7,8 +7,8 @@ DESCRIPTION:
 This single page application (SPA) is about giving easier access to finding and curating black art and black artist. It's a site that gathers a collection of black art & artist from other art sites including the MET (Metropolitan Museum) and The Art Institute of Chicago, thus utilizing their api via db.json. This SPA will include HTML, CSS, & JavaScript.
 
 Page Organization:
->top: Header
->left side: navigation area
+>top: Header > Title of Project > The Black Artist Project or B.A.P.
+>top: navigation area > search bar, dark mode and contact form
 >container: content
 
 Open API to utilize:
@@ -20,10 +20,10 @@ AIC - https://api.artic.edu/api/v1/artworks
 LIST OF FEATURES:
 The core MVP/site features will include the following (.addEventListener):
 
-1. Search Input Field - to type in (keyup) the name of the black artist or title of artwork
-2. Classification area - to (click) onto the specifc types of artwork (i.e. paintings, scultpures, drawings)
-3. Price Range - to (filter), using a slider, the range of prices for those looking to invest into Black Art and Black Artist
-
+1. DOMContentLoaded - to make sure everything loads correctly
+2. Search Input Field - to type in (keyup & filter) the name of black artist or title of artwork or category of artwork (i.e. paintings, scultpures, drawings)
+3. Dark Mode - to (click) between light and dark modes
+4. Contact Form - to (submit) name and email to be added to the email list
 
 Each piece of work with include the following attributes:
 1. Title:
