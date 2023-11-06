@@ -13,10 +13,22 @@
         <div id="search-container">
             <input type="text" id="searchInput" placeholder="Search for Black Art...">
         <button id="toggleDarkMode">Dark Mode</button>
+
+        <button id="contactButton">Contact</button>
+        <form id="contactForm" style="display: none;">
+          <h2>Contact Information</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <button type="submit">Submit</button>
+        </form>
+
         <div id="results"></div>
         <div id="cards">
         <!-- Your card elements will be dynamically added here -->
       </div>
+
       <div id="cardDetails" style="display: none;">
         <h2>Artwork Details</h2>
         <p id="cardArtist"></p>
