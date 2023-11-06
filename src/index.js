@@ -131,4 +131,4 @@ searchInput.addEventListener("input", () => {
 //***CARD***
   //console.log(document.querySelector('#cards'))
   //document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
-  })
+})
