@@ -4,7 +4,25 @@ The Black Artist Project
 
 ///
 DESCRIPTION:
-This single page application (SPA) is about giving easier access to finding and curating black art and black artist. It's a site that gathers a collection of black art & artist from other art sites including the MET (Metropolitan Museum) and The Art Institute of Chicago, thus utilizing their api via db.json. This SPA will include HTML, CSS, & JavaScript.
+This single page application (SPA) is about providing easier access in finding and curating black artist artwork. It's a site that gathers a collection of black artist artwork from other art sites including the MET (Metropolitan Museum) and The Art Institute of Chicago, thus utilizing their api via db.json. This SPA will include HTML, CSS, & JavaScript.
+
+///
+HOW TO RUN THE APP
+
+>Runs as a Single Page Application (SPA). Single HTML, CSS, JavaScript files.
+>Accessing either an external API or db.json mock server
+>No redirects. No page reloads.
+>
+
+1. Upon opening web site/application > begin typing into the search field (i.e. Name of Artwork - "After La Negresse, 1872"; Artist Name - "Kehinde Wiley"; or Category of Artwork - "Sculpture, Drawings or Painting")
+
+2. A list of his artwork will filter out from other artist artwork
+
+3. You can then click on the artwork card for more artwork details/information
+
+4. You can switch between light mode/dark mode
+
+5. To receive more information and sign up on the email list, click on "sign up!" button and input your name and email and click submit.
 
 Page Organization:
 >top: Header > Title of Project > The Black Artist Project or B.A.P.
@@ -91,12 +109,5 @@ From NN of FLIRN:
 2. Url of page
 3. How to run it!
 
-upon opening file > begin typing into the search field (i.e. kehinde wiley)
-a list of his artwork will filter out from other artist artwork
 
-you can then click on the artwork card for more artwork details/information
-
-you can switch between light mode/dark mode
-
-to receive more information and sign up on the email list, click on "sign up!" button and input your name and email and click submit.
 
