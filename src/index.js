@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const searchInput = document.getElementById("searchInput");
 const results = document.getElementById("results");
 
+//***CARD***
+const cardsContainer = document.getElementById("cards");
+
 //***SEARCH INPUT***
 searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
