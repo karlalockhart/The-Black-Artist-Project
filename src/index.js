@@ -18,6 +18,15 @@ const results = document.getElementById("results");
 //***CARD***
 const cardsContainer = document.getElementById("cards");
 
+
+//***DARK MODE***
+const toggleDarkModeButton = document.getElementById("toggleDarkMode");
+
+let darkModeEnabled = false;
+
+
+
+
 //***SEARCH INPUT***
 searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
@@ -40,13 +49,22 @@ function displayFilteredCards(filteredCards) {
     results.innerHTML = ""; // Clear previous results
     cardDetailsContainer.style.display = "none"; // Hide card details
     //***CONTACT FORM***
-    //contactForm.style.display = "none"; // Hide contact form
+    contactForm.style.display = "none"; // Hide contact form
   
   //***CARD***
     if (filteredCards.length === 0) {
       results.innerHTML = "<p>No results found</p>";
     } else {
       cardsContainer.innerHTML = ""; // Clear previous card elements
+  
+  //***CARD***
+      filteredCards.forEach((card) => {
+        const cardElement = document.createElement("div");
+        cardElement.className = "card"; // You can define CSS styles for your cards
+        cardElement.innerHTML = `
+              <img src="${card.image}" alt="">
+              <h3>${card.name}</h3>
+        `;
+        //***DARK MODE***
+          cardElement.classList.toggle("dark-mode", darkModeEnabled);
 
-    }}
-}
