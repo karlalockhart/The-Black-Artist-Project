@@ -1,0 +1,74 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/486080/preview",
+        "name": "Untitled",
+        "artist": "Jean-Michel Basquiat, (American, Brooklyn, New York 1960–1988)",
+        "medium": "Graphite, colored pencils, and watercolor on paper",
+        "price": 74000,
+        "category": "Drawings",
+        "likes": 13
+      },
+      {
+        "id": 2,
+        "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/486079/preview",
+        "name": "Untitled",
+        "artist": "Jean-Michel Basquiat, (American, Brooklyn, New York 1960–1988)",
+        "medium": "Graphite, colored pencils, oilstick, acrylic, torn and pasted papers on paper",
+        "price": 174000,
+        "category": "Drawings",
+        "likes": 9
+      },
+      {
+        "id": 3,
+        "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/761270/preview",
+        "name": "Jughead",
+        "artist": "Jean-Michel Basquiat, (American, Brooklyn, New York 1960–1988)",
+        "medium": "Acrylic, wax crayon, pencil on canvas",
+        "price": 40000,
+        "category": "Paintings",
+        "likes": 5
+      },
+      {
+        "id": 4,
+        "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/761218/preview",
+        "name": "Untitled",
+        "artist": "Jean-Michel Basquiat, (American, Brooklyn, New York 1960–1988)",
+        "medium": "Acrylic, oil and oil stick on wood panel",
+        "price": 20000,
+        "category": "Paintings",
+        "likes": 3
+      },
+      {
+        "id": 5,
+        "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/689653/preview",
+        "name": "Piscine Versus the Best Hotels (or Various Loin)",
+        "artist": "Jean-Michel Basquiat, (American, Brooklyn, New York 1960–1988)",
+        "medium": "Graphite, colored pencils, and watercolor on paper",
+        "price": 74000,
+        "category": "Drawings",
+        "likes": 3
+      },
+      {
+        "id": 6,
+        "image": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/496204/1008420/restricted",
+        "name": "The Veiled Christ (Study)",
+        "artist": "Kehinde Wiley, (American, Born 1977)",
+        "medium": "Oil wash on paper",
+        "price": 74000,
+        "category": "Drawings",
+        "likes": 3
+      },
+      {
+        "id": 7,
+        "image": "https://images.metmuseum.org/CRDImages/es/mobile-large/IA-Wiley-Studio--3-6-1417667.jpg",
+        "name": "After La Negresse, 1872",
+        "artist": "Kehinde Wiley, (American, Born 1977)",
+        "medium": "Cast marble dust and resin, edition 170/250",
+        "price": 44000,
+        "category": "Sculptures",
+        "likes": 16
+      }
+    ]
+  }
