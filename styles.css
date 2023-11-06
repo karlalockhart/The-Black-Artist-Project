@@ -12,3 +12,42 @@ body {
   #search-container {
     margin: 1em 0;
   }
+
+  .card {
+    background-color: #ffffff;
+    text-align: center;
+    border: grey solid 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 20em;
+    height: max-content;
+    display: inline-grid;
+    margin: 1rem .5rem;
+    cursor: pointer;
+    box-shadow: 3px 4px #999999
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .image-container {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    justify-self: center;
+    object-fit: contain;
+    height: 15em;
+  }

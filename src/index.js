@@ -35,4 +35,18 @@ searchInput.addEventListener("input", () => {
       .catch((error) => console.error("Error fetching data:", error));
   });
 
-})
+//***CARD***
+function displayFilteredCards(filteredCards) {
+    results.innerHTML = ""; // Clear previous results
+    cardDetailsContainer.style.display = "none"; // Hide card details
+    //***CONTACT FORM***
+    //contactForm.style.display = "none"; // Hide contact form
+  
+  //***CARD***
+    if (filteredCards.length === 0) {
+      results.innerHTML = "<p>No results found</p>";
+    } else {
+      cardsContainer.innerHTML = ""; // Clear previous card elements
+
+    }}
+}
