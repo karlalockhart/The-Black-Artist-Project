@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: monospace;
   }
-
+  
   .wrapper {
     width: 95%;
     margin: 0 auto;
@@ -13,7 +13,7 @@ body {
     margin: 1em 0;
   }
 
-  /*dark mode*/
+/*dark mode*/
 body.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
@@ -23,7 +23,7 @@ body.dark-mode {
     background-color: #f5f8ff;
     color: #1e1e1e;
   }
-  
+
 
   .card {
     background-color: #ffffff;
@@ -39,18 +39,38 @@ body.dark-mode {
     box-shadow: 3px 4px #999999
   }
 
+    
+  .card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  
+  .card-details button {
+    margin-top: 10px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+  /*
+  .submit {
+    position: relative;
+    background-color: #e04b52;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  .submit:hover {
+    background-color: whitesmoke;
+    border: #e04b52 solid 1px;
+    color: #e04b52;
+  }
+  */
 
 
   .image-container {
@@ -62,4 +82,17 @@ body.dark-mode {
     justify-self: center;
     object-fit: contain;
     height: 15em;
+  }
+
+  .hide {
+    display: none;
+  }
+  
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      justify-self: center;
+      object-fit: contain;
+      height: 15em;
+    }
   }
