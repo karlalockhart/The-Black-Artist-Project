@@ -13,6 +13,18 @@ body {
     margin: 1em 0;
   }
 
+  /*dark mode*/
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .card.dark-mode {
+    background-color: #f5f8ff;
+    color: #1e1e1e;
+  }
+  
+
   .card {
     background-color: #ffffff;
     text-align: center;

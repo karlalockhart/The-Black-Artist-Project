@@ -24,7 +24,15 @@ const toggleDarkModeButton = document.getElementById("toggleDarkMode");
 
 let darkModeEnabled = false;
 
-
+//***DARK MODE***
+//Toggle dark mode
+toggleDarkModeButton.addEventListener("click", () => {
+    darkModeEnabled = !darkModeEnabled;
+    document.body.classList.toggle("dark-mode", darkModeEnabled);
+    cardsContainer.querySelectorAll(".card").forEach((card) => {
+      card.classList.toggle("dark-mode", darkModeEnabled);
+    });
+  });
 
 
 //***SEARCH INPUT***
