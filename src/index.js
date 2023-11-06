@@ -24,9 +24,11 @@ const cardArtist = document.getElementById("cardArtist");
 const cardMedium = document.getElementById("cardMedium");
 const cardPrice = document.getElementById("cardPrice");
 
-
-
-
+//***CONTACT FORM***
+const contactButton = document.getElementById("contactButton");
+const contactForm = document.getElementById("contactForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
 
 //***DARK MODE***
 const toggleDarkModeButton = document.getElementById("toggleDarkMode");
