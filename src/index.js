@@ -60,8 +60,21 @@ contactButton.addEventListener("click", () => {
     contactForm.style.display = "block";
   });
 
+//***CONTACT FORM***
+// Handle form submission
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const contactData = {
+      name: nameInput.value,
+      email: emailInput.value,
+    };
 
-
+//***CONTACT FORM***
+// You can send the contact data to a server or process it as needed
+console.log("Contact Form Data:", contactData);
+contactForm.reset(); // Clear the form
+contactForm.style.display = "none"; // Hide the form
+});
 
 
 //***SEARCH INPUT***
@@ -117,5 +130,5 @@ searchInput.addEventListener("input", () => {
   }
   //***CARD***
   //console.log(document.querySelector('#cards'))
-  document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
+  //document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
   })
