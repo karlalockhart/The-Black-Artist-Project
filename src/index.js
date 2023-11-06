@@ -54,6 +54,15 @@ function showCardDetails(artist, medium, price) {
     cardDetailsContainer.style.display = "block";
   }
 
+//***CONTACT FORM***
+// Show contact form when the "Contact" button is clicked
+contactButton.addEventListener("click", () => {
+    contactForm.style.display = "block";
+  });
+
+
+
+
 
 //***SEARCH INPUT***
 searchInput.addEventListener("input", () => {
