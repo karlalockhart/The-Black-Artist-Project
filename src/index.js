@@ -81,6 +81,11 @@ contactForm.style.display = "none"; // Hide the form
 searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
 //***FETCH DB.JSON & CARD***
+/*
+  Here we are calling `fetch()` and passing a URL to a data source as the
+  argument. The function call returns a Promise object that represents what the data
+  source sent back. It does *not* return the actual content.
+*/
     fetch("http://localhost:3000/data")
       .then((response) => response.json())
       .then((data) => {

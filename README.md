@@ -8,9 +8,9 @@ This single page application (SPA) is about providing easier access in finding a
 
 ///
 HOW TO RUN THE APP
-
 >Runs as a Single Page Application (SPA). Single HTML, CSS, JavaScript files.
->Accessing either an external API or db.json mock server
+>Communicates via either an external public API or db.json using json-server --watch db.json
+>All interactions between the client and the API are handled asynchronously and use JSON as the communication format. No API key is required as it is an open API.
 >No redirects. No page reloads.
 >
 
