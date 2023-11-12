@@ -166,6 +166,6 @@ const likeCountElement = cardElement.querySelector(`#like-count-${card.id}`);
   }
    
 //***CARD***
-  //console.log(document.querySelector('#cards'))
-  //document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
+  console.log(document.querySelector('#cards'))
+  document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
 })
