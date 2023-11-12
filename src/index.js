@@ -148,12 +148,13 @@ searchInput.addEventListener("input", () => {
         });
 
  //***LIKE***
- const likeButton = cardElement.querySelector(".like-btn");
- const likeCountElement = cardElement.querySelector(`#like-count-${card.id}`);
+const likeButton = cardElement.querySelector(".like-btn");
+const likeCountElement = cardElement.querySelector(`#like-count-${card.id}`);
 
- likeButton.addEventListener("click", () => {
-   handleLike(card.id);
- });
+      // Add click event to show like button
+        likeButton.addEventListener("click", () => {
+          handleLike(card.id);
+        });
 
         cardsContainer.appendChild(cardElement);
       });
@@ -161,6 +162,6 @@ searchInput.addEventListener("input", () => {
   }
    
 //***CARD***
-  //console.log(document.querySelector('#cards'))
-  //document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
+  console.log(document.querySelector('#cards'))
+  document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
 })
