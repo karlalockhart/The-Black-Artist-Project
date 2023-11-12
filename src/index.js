@@ -52,6 +52,9 @@ toggleDarkModeButton.addEventListener("click", () => {
   let currentLikes = parseInt(likeCountElement.textContent, 10);
   currentLikes++;
   likeCountElement.textContent = currentLikes;
+
+  // Store the like count in local storage
+  localStorage.setItem(`like-count-${cardId}`, currentLikes.toString());
 }
 
 //***CARD DETAILS*** 
@@ -94,7 +97,7 @@ searchInput.addEventListener("input", () => {
 /*
   Here we are calling `fetch()` and passing a URL to a data source as the
   argument. The function call returns a Promise object that represents what the data
-  source sent back. It does *not* return the actual content.
+  source sent back. It does NOT return the actual content.
 */
     fetch("http://localhost:3000/data")
       .then((response) => response.json())
@@ -125,9 +128,6 @@ searchInput.addEventListener("input", () => {
     } else {
       cardsContainer.innerHTML = ""; // Clear previous card elements
   
-
-
-      
 //***CARD***
       filteredCards.forEach((card) => {
         const cardElement = document.createElement("div");
@@ -156,12 +156,16 @@ const likeCountElement = cardElement.querySelector(`#like-count-${card.id}`);
           handleLike(card.id);
         });
 
+        // Retrieve and set the like count from local storage
+        const storedLikes = localStorage.getItem(`like-count-${card.id}`);
+        likeCountElement.textContent = storedLikes ? storedLikes : "0";
+        
         cardsContainer.appendChild(cardElement);
       });
     }
   }
    
 //***CARD***
-  console.log(document.querySelector('#cards'))
-  document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
+  //console.log(document.querySelector('#cards'))
+  //document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
 })

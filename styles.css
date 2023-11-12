@@ -40,8 +40,7 @@ body.dark-mode {
     position: relative; /* Added position relative */
   }
 
-/*Like*/
-
+/* Like */
 .like-btn {
     background-color: rgb(199, 199, 199);
     color: whitesmoke;
@@ -64,7 +63,7 @@ body.dark-mode {
     color: #646363;
   }
   
-    
+/* Card Details */    
 .card-details {
     display: flex;
     flex-direction: column;
@@ -76,7 +75,7 @@ body.dark-mode {
     margin-top: 10px;
   }
 
-
+/* Image */
 .image-container {
     text-align: center;
   }
@@ -88,6 +87,7 @@ img {
     height: 15em;
   }
 
+/* Display Settings */  
 .hide {
     display: none;
   }
