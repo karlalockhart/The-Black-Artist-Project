@@ -13,19 +13,19 @@ body {
     margin: 1em 0;
   }
 
-/*dark mode*/
+/*Dark Mode*/
 body.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
   }
   
-  .card.dark-mode {
+.card.dark-mode {
     background-color: #f5f8ff;
     color: #1e1e1e;
   }
 
-
-  .card {
+/* Card */
+.card {
     background-color: #ffffff;
     text-align: center;
     border: grey solid 1px;
@@ -40,9 +40,9 @@ body.dark-mode {
     position: relative; /* Added position relative */
   }
 
-/*LIKE*/
+/*Like*/
 
-  .like-btn {
+.like-btn {
     background-color: rgb(199, 199, 199);
     color: whitesmoke;
     height: 17px;
@@ -57,7 +57,7 @@ body.dark-mode {
     transform: translateX(-50%);
   }
   
-  .like-count {
+.like-count {
     display: block;
     margin-top: 8px;
     font-size: 10px;
@@ -65,55 +65,34 @@ body.dark-mode {
   }
   
     
-  .card-details {
+.card-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 20px; /* Adjust the margin as needed */
   }
   
-  .card-details button {
+.card-details button {
     margin-top: 10px;
   }
 
-  /*
-  .submit {
-    position: relative;
-    background-color: #e04b52;
-    border-radius: 5px;
-    height: 2rem;
-    width: max-content;
-    color: whitesmoke;
-    font-size: 18px;
-    justify-self: center;
-    font-family: monospace;
-    margin: 3px;
-  }
-  
-  .submit:hover {
-    background-color: whitesmoke;
-    border: #e04b52 solid 1px;
-    color: #e04b52;
-  }
-  */
 
-
-  .image-container {
+.image-container {
     text-align: center;
   }
   
-  img {
+img {
     max-width: 100%;
     justify-self: center;
     object-fit: contain;
     height: 15em;
   }
 
-  .hide {
+.hide {
     display: none;
   }
   
-  @media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
     img {
       max-width: 100%;
       justify-self: center;
