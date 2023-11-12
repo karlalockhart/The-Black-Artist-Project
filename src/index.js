@@ -104,7 +104,6 @@ searchInput.addEventListener("input", () => {
   });
 
 
-    
 //***CARD***
   function displayFilteredCards(filteredCards) {
     results.innerHTML = ""; // Clear previous results
