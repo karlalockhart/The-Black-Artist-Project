@@ -1,13 +1,3 @@
-/*
-document.addEventListener("DOMContentLoaded", () => fetchData)
-
-function fetchData(){
-    fetch("http://localhost:3000/data")
-    .then(res => res.json)
-    .then(data => console.log(data))
-}
-*/
-
 document.addEventListener('DOMContentLoaded', () => {
     console.log('The DOM has Landed!')
 
@@ -169,3 +159,14 @@ const likeCountElement = cardElement.querySelector(`#like-count-${card.id}`);
   console.log(document.querySelector('#cards'))
   document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
 })
+
+
+/*
+document.addEventListener("DOMContentLoaded", () => fetchData)
+
+function fetchData(){
+    fetch("http://localhost:3000/data")
+    .then(res => res.json)
+    .then(data => console.log(data))
+}
+*/
