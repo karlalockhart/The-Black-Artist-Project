@@ -24,6 +24,7 @@ const cardArtist = document.getElementById("cardArtist");
 const cardMedium = document.getElementById("cardMedium");
 const cardPrice = document.getElementById("cardPrice");
 
+
 //***CONTACT FORM***
 const contactButton = document.getElementById("contactButton");
 const contactForm = document.getElementById("contactForm");
@@ -44,6 +45,14 @@ toggleDarkModeButton.addEventListener("click", () => {
     card.classList.toggle("dark-mode", darkModeEnabled);
   });
 });
+
+ //***LIKE***
+ function handleLike(cardId) {
+  const likeCountElement = document.getElementById(`like-count-${cardId}`);
+  let currentLikes = parseInt(likeCountElement.textContent, 10);
+  currentLikes++;
+  likeCountElement.textContent = currentLikes;
+}
 
 //***CARD DETAILS*** 
 //Function to display card details
@@ -70,7 +79,7 @@ contactForm.addEventListener("submit", (e) => {
     };
 
 //***CONTACT FORM***
-// You can send the contact data to a server or process it as needed
+//send the contact data to a server or process it as needed
 console.log("Contact Form Data:", contactData);
 contactForm.reset(); // Clear the form
 contactForm.style.display = "none"; // Hide the form
@@ -80,6 +89,7 @@ contactForm.style.display = "none"; // Hide the form
 //***SEARCH INPUT***
 searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
+
 //***FETCH DB.JSON & CARD***
 /*
   Here we are calling `fetch()` and passing a URL to a data source as the
@@ -95,10 +105,13 @@ searchInput.addEventListener("input", () => {
         });
   
         displayFilteredCards(filteredCards);
+        
       })
       .catch((error) => console.error("Error fetching data:", error));
   });
-  
+
+
+    
 //***CARD***
   function displayFilteredCards(filteredCards) {
     results.innerHTML = ""; // Clear previous results
@@ -112,6 +125,9 @@ searchInput.addEventListener("input", () => {
     } else {
       cardsContainer.innerHTML = ""; // Clear previous card elements
   
+
+
+      
 //***CARD***
       filteredCards.forEach((card) => {
         const cardElement = document.createElement("div");
@@ -119,6 +135,8 @@ searchInput.addEventListener("input", () => {
         cardElement.innerHTML = `
               <img src="${card.image}" alt="">
               <h3>${card.name}</h3>
+              <button class="like-btn">Like</button>
+              <span class="like-count" id="like-count-${card.id}">0</span>
         `;
 //***DARK MODE***
           cardElement.classList.toggle("dark-mode", darkModeEnabled);
@@ -128,11 +146,20 @@ searchInput.addEventListener("input", () => {
         cardElement.addEventListener("click", () => {
           showCardDetails(card.artist, card.medium, card.price);
         });
-  
+
+ //***LIKE***
+ const likeButton = cardElement.querySelector(".like-btn");
+ const likeCountElement = cardElement.querySelector(`#like-count-${card.id}`);
+
+ likeButton.addEventListener("click", () => {
+   handleLike(card.id);
+ });
+
         cardsContainer.appendChild(cardElement);
       });
     }
   }
+   
 //***CARD***
   //console.log(document.querySelector('#cards'))
   //document.querySelector('#cards').addEventListener('mouseover', () => console.log('Curate Me!'))
