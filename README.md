@@ -64,7 +64,8 @@ As a user, I want to be able to "filter" a specific price range of black art and
 
 ///
 VISUALS:
-Here's the link to Youtube video: https://youtu.be/mW0M8KD7oDA?si=o-iA-CQo7LLPPbY4
+Here's the link to Youtube video:
+https://youtu.be/vhcG2Pg62dU
 
 ///
 INSTALLATION:
@@ -83,7 +84,3 @@ SUPPORT:
 ///
 PROJECT STATUS:
 Development has slowed down. I will continue making efforts on this project.
-
-
-
-
