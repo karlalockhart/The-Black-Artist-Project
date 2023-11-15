@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('The DOM has Landed!')
+    //console.log('got art')
+    //Get All Artwork upon loading - #cards
+  fetch("http://localhost:3000/data")
+    .then((response) => response.json())
+    .then((data) => {
+      //console.log(data, 'Got Art!')
+      displayFilteredCards(data); // Display all cards on page load
+})
+
 
 //***SEARCH INPUT***
 const searchInput = document.getElementById("searchInput");
@@ -25,6 +34,8 @@ const emailInput = document.getElementById("email");
 const toggleDarkModeButton = document.getElementById("toggleDarkMode");
 
 let darkModeEnabled = false;
+
+
 
 //***DARK MODE***
 //Toggle dark mode
@@ -83,6 +94,7 @@ contactForm.style.display = "none"; // Hide the form
 searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
 
+
 //***FETCH DB.JSON & CARD***
 /*
   Here we are calling `fetch()` and passing a URL to a data source as the
@@ -92,6 +104,8 @@ searchInput.addEventListener("input", () => {
     fetch("http://localhost:3000/data")
       .then((response) => response.json())
       .then((data) => {
+        // Upon loading, get all artwork attributes
+        console.log(data, 'got art!')
         // Filter the cards based on the search term
         const filteredCards = data.filter((card) => {
           return card.name.toLowerCase().includes(searchTerm) || card.artist.toLowerCase().includes(searchTerm) || card.category.toLowerCase().includes(searchTerm);;
