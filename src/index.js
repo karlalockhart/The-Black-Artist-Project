@@ -1,13 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('The DOM has Landed!')
     //console.log('got art')
-    //Get All Artwork upon loading - #cards
-  fetch("http://localhost:3000/data")
-    .then((response) => response.json())
-    .then((data) => {
-      //console.log(data, 'Got Art!')
-      displayFilteredCards(data); // Display all cards on page load
-})
 
 
 //***SEARCH INPUT***
@@ -34,8 +27,6 @@ const emailInput = document.getElementById("email");
 const toggleDarkModeButton = document.getElementById("toggleDarkMode");
 
 let darkModeEnabled = false;
-
-
 
 //***DARK MODE***
 //Toggle dark mode
@@ -93,14 +84,7 @@ contactForm.style.display = "none"; // Hide the form
 //***SEARCH INPUT***
 searchInput.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
-
-
 //***FETCH DB.JSON & CARD***
-/*
-  Here we are calling `fetch()` and passing a URL to a data source as the
-  argument. The function call returns a Promise object that represents what the data
-  source sent back. It does NOT return the actual content.
-*/
     fetch("http://localhost:3000/data")
       .then((response) => response.json())
       .then((data) => {
@@ -175,6 +159,7 @@ const likeCountElement = cardElement.querySelector(`#like-count-${card.id}`);
 
 
 /*
+//Starter Kit
 document.addEventListener("DOMContentLoaded", () => fetchData)
 
 function fetchData(){
